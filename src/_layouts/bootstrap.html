@@ -8,14 +8,6 @@
 
     <title>JinyDev</title>
     <link rel="stylesheet" href='{{ "/assets/css/styles.css" | relative_url }}'>
-
-    {% if site.layout.bgcolor %}
-    <style>
-      body {
-        background: {{ site.layout.bgcolor }};
-      }
-    </style>
-    {% endif %}
   </head>
   <body>
     {{content}}
