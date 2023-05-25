@@ -6,4 +6,8 @@
 <url>
 <loc>http://localhost:4000/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/loginPage.html</loc>
+<lastmod>2023-05-25T20:59:19+09:00</lastmod>
+</url>
 </urlset>
