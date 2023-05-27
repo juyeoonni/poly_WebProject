@@ -42,11 +42,16 @@
         .btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5 {
             background-color: yellow;
         }
-
+        
         #nav3 {
             width: 100%;
-            width: 1207px;
-            margin: 0 auto;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            display: flex;
+            justify-content: center;
         }
 
         #nav2 {
@@ -108,10 +113,13 @@
     <style>
     #main {
         background-color: rgb(0, 133, 126) !important;
+        display: flex;
+        justify-content: center;
+
     }
 </style>
 
-
+<br><br><br><br>
 <div class="container-xxl my-6 wow fadeInUp" id="main" data-wow-delay="0.1s"
     style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
     <div class="container px-lg-5">
@@ -140,6 +148,8 @@
     #carouselExampleInterval {
         margin-left: 180px;
         width: 80%;
+        display: flex;
+        justify-content: center;
 
     }
 </style>
@@ -387,65 +397,167 @@
     <br><br><br>
 <style>
   #card {
-    margin-left: 300px;
+    display: flex;
+    justify-content: center;
   }
 
   .card1 {
     margin-right: 50px;
   }
 
+  #img1 {
+    transition: transform 0.2s ease;
+  }
+
+  #img1:hover {
+    transform: scale(1.09);
+  }
+
   .card2 {
     margin-right: 50px;
+  }
+
+  #img2 {
+    transition: transform 0.2s ease;
+  }
+
+  #img2:hover {
+    transform: scale(1.09);
   }
 
   .card3 {
     margin-right: 50px;
   }
 
+  #img3 {
+    transition: transform 0.2s ease;
+  }
+
+  #img3:hover {
+    transform: scale(1.09);
+  }
+
   .card4 {
     margin-right: 50px;
+  }
+
+  #img4 {
+    transition: transform 0.2s ease;
+  }
+
+  #img4:hover {
+    transform: scale(1.09);
+  }
+
+
+  #cardBtn1 {
+    background-color: #63606d;
+    border-color: aliceblue;
+  }
+
+  #cardBtn1:hover {
+  background-color: rgb(0, 133, 126); 
+}
+
+  #cardBtn1:active {
+    background-color: #63606d);
+  }
+
+  #cardBtn2 {
+    background-color: #63606d;
+    border-color: aliceblue;
+  }
+
+  #cardBtn2:hover {
+  background-color: rgb(0, 133, 126); 
+  }
+
+  #cardBtn2:active {
+    background-color: rgb(0, 133, 126);
+  }
+
+  #cardBtn3 {
+    background-color: #63606d;
+    border-color: aliceblue;
+  }
+
+  #cardBtn3:hover {
+  background-color: rgb(0, 133, 126); 
+  }
+
+  #cardBtn3:active {
+    background-color: rgb(0, 133, 126);
+  }
+
+  #cardBtn4 {
+    background-color: #63606d;
+    border-color: aliceblue;
+  }
+
+  #cardBtn4:hover {
+  background-color: rgb(0, 133, 126); 
+  }
+
+  #cardBtn4:active {
+    background-color: rgb(0, 133, 126);
   }
 </style>
 
 
 <div class="row g-4" id="card">
   <div class="card1" style="width: 18rem;">
-    <img src="./img/book1.png" class="card-img-top" alt="...">
+    <img src="./img/book1.png" class="card-img-top" id="img1">
     <div class="card-body">
+      <br>
       <h5 class="card-title" style="font-family: 'hanabold' !important; font-weight: bold;">베스트 셀러</h5>
-      <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to build on the card title and make up the bulk of the card's
-        content.</p>
-      <a href="#" class="btn btn-primary" style="font-family: 'hanabold' !important; font-weight: bold;">Go somewhere</a>
+      <!-- <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to
+        build on the card title and make up the bulk of the card's
+        content.</p> -->
+      <br>
+      <div class="btn btn-primary" id="cardBtn1" style="font-family: 'hanabold' !important; font-weight: bold;">Read
+        More</div>
     </div>
   </div>
 
   <div class="card2" style="width: 18rem;">
-    <img src="./img/book2.png" class="card-img-top" alt="...">
+    <img src="./img/book2.png" class="card-img-top" id="img2">
     <div class="card-body">
+      <br>
       <h5 class="card-title" style="font-family: 'hanabold' !important; font-weight: bold;">이달의 책</h5>
-      <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to build on the card title and make up the bulk of the card's
-        content.</p>
-      <a href="#" class="btn btn-primary" style="font-family: 'hanabold' !important; font-weight: bold;">Go somewhere</a>
+      <!-- <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to
+        build on the card title and make up the bulk of the card's
+        content.</p> -->
+      <br>
+      <div class="btn btn-primary" id="cardBtn2" style="font-family: 'hanabold' !important; font-weight: bold;">Read
+        More</div>
     </div>
   </div>
 
   <div class="card3" style="width: 18rem;">
-    <img src="./img/book3.png" class="card-img-top" alt="...">
+    <img src="./img/book3.png" class="card-img-top" id="img3">
     <div class="card-body">
+      <br>
       <h5 class="card-title" style="font-family: 'hanabold' !important; font-weight: bold;">이주의 책</h5>
-      <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to build on the card title and make up the bulk of the card's
-        content.</p>
-      <a href="#" class="btn btn-primary" style="font-family: 'hanabold' !important; font-weight: bold;">Go somewhere</a>
+      <!-- <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to
+        build on the card title and make up the bulk of the card's
+        content.</p> -->
+      <br>
+      <div class="btn btn-primary" id="cardBtn3" style="font-family: 'hanabold' !important; font-weight: bold;">Read
+        More</div>
     </div>
   </div>
 
   <div class="card4" style="width: 18rem;">
-    <img src="./img/book4.png" class="card-img-top" alt="...">
+    <img src="./img/book4.png" class="card-img-top" id="img4">
     <div class="card-body">
+      <br>
       <h5 class="card-title" style="font-family: 'hanabold' !important; font-weight: bold;">새로나온 책</h5>
-      <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to build on the card title and make up the bulk of the card's
-        content.</p>
-      <a href="#" class="btn btn-primary" style="font-family: 'hanabold' !important; font-weight: bold;">Go somewhere</a>
+      <!-- <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to
+        build on the card title and make up the bulk of the card's
+        content.</p> -->
+      <br>
+      <div class="btn btn-primary" id="cardBtn4" style="font-family: 'hanabold' !important; font-weight: bold;">Read
+        More</div>
     </div>
   </div>
 
@@ -560,23 +672,7 @@
 </div>
 
 <footer>
-    <style>
-    /* 스타일 변경 */
-    .no-link {
-        text-decoration: none;
-        color: black;
-        cursor: default;
-    }
-
-    /* 활성 링크 스타일 유지 */
-    .no-link:hover,
-    .no-link:active {
-        color: inherit;
-        cursor: default;
-    }
-</style>
-
-<div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s"
+    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s"
     style="margin-top: 6rem; visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
     <div class="container py-5">
         <div class="row g-5">
