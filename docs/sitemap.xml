@@ -13,6 +13,9 @@
 <loc>http://localhost:4000/libraryInfo.html</loc>
 </url>
 <url>
+<loc>http://localhost:4000/libraryService.html</loc>
+</url>
+<url>
 <loc>http://localhost:4000/loginPage.html</loc>
 </url>
 </urlset>
