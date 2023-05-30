@@ -108,7 +108,150 @@
 </body>
 
 </html>
-    
+    <!-- 부트스트랩 CSS 파일 로드 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- 부트스트랩 JavaScript 파일 로드 -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<head>
+    <style>
+        container {
+            background-color: rgb(0, 133, 126) !important;
+        }
+
+        #CallIcon {
+            width: 80px;
+            height: 80px;
+        }
+
+        #addressIcon {
+            width: 80px;
+            height: 80px;
+        }
+
+        #timeIcon {
+            width: 80px;
+            height: 80px;
+        }
+
+        #emailIcon {
+            width: 80px;
+            height: 80px;
+        }
+
+        #mapID {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* 이미지 위로 떠오르는 효과 */
+        .contact__widget img {
+            transition: transform 0.3s ease-in-out;
+            /* 움직임이 부드럽게 일어나도록 설정 */
+        }
+
+        .contact__widget img:hover {
+            transform: translateY(-20px);
+            /* 이미지를 위로 10px 이동 */
+        }
+    </style>
+</head>
+
+
+<br><br><br><br><br><br>
+
+<body>
+    <!-- <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg"
+        style="background-image: url(&quot;img/breadcrumb.jpg&quot;);"> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h2>Contact Us</h2>
+                    <div class="breadcrumb__option">
+                        <!-- <a href="./index.html">Home</a>
+                            <span>Contact Us</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <!-- </section> -->
+
+    <!-- contact -->
+
+    <section class="contact spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="contact__widget">
+                        <!-- <span class="icon_phone"></span> -->
+                        <img src="img/call.png" alt="CallIcon" id="CallIcon">
+                        <br><br>
+                        <h4>Phone</h4>
+                        <p>+01-3-8888-6868</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="contact__widget">
+                        <!-- <span class="icon_pin_alt"></span> -->
+                        <img src="img/placeholder.png" alt="AddressIcon" id="addressIcon">
+                        <br><br>
+                        <h4>Address</h4>
+                        <p>60-49 Road 11378 New York</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="contact__widget">
+                        <!-- <span class="icon_clock_alt"></span> -->
+                        <img src="img/time.png" alt="timeIcon" id="timeIcon">
+                        <br><br>
+                        <h4>Open time</h4>
+                        <p>10:00 am to 23:00 pm</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="contact__widget">
+                        <!-- <span class="icon_mail_alt"></span> -->
+                        <img src="img/email.png" alt="emailIcon" id="emailIcon">
+                        <br><br>
+                        <h4>Email</h4>
+                        <p>hello@colorlib.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- map -->
+    <!-- * 카카오맵 - 지도퍼가기 -->
+    <!-- 1. 지도 노드 -->
+    <br><br><br><br>
+    <div id="mapID">
+        <div id="daumRoughmapContainer1685431020774" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+        <!--
+    	2. 설치 스크립트
+    	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+    -->
+        <script charset="UTF-8" class="daum_roughmap_loader_script"
+            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+            new daum.roughmap.Lander({
+                "timestamp": "1685431020774",
+                "key": "2eyzd",
+                "mapWidth": "1000",
+                "mapHeight": "500"
+            }).render();
+        </script>
+    </div>
+</body>
 </div>
 
 <footer>

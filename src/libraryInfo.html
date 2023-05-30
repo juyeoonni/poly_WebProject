@@ -2,17 +2,6 @@
 layout: base
 ---
 
-<div class="d-flex align-items-center">
-    <div class="p-5">
-        <h2 class="fw-bolder">Project Name 1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse?
-            Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-    </div>
-    <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="...">
-</div>
-
-
-
 <head>
     <style>
         body {
@@ -32,15 +21,85 @@ layout: base
             height: 100%;
             border: 0;
         }
+
+        .libraryInfo {
+            width: 400px;
+            height: 300px;
+            margin-right: 200px;
+        }
+
+        #medalIcon {
+            width: 70px;
+            height: 70px;
+        }
+
+        #groupIcon {
+            width: 70px;
+            height: 70px;
+        }
     </style>
 </head>
 
 <body>
-    <div id="map">
+    <br><br><br><br><br><br>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s"
+                    style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/libraryInfo.jpg">
+                </div>
+                <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s"
+                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                    <h1 class="display-1 text-primary mb-0">25</h1>
+                    <p class="text-primary mb-4">Year of Experience</p>
+                    <h1 class="display-5 mb-4">Hati Library</h1>
+                    <p class="mb-4">지속 가능한 미래를 위한 당신의 큰 발걸음. 책속에 세계가 현실로 이루어집니다.
+                        당신의 상상력을 자유롭게 펼칠 수 있는 곳, 하티 도서관입니다. <br> 당신의 궁금증을 해소하고, 새로운 아이디어를 발견할 수 있습니다. <br>
+                        지금, 하티 도서관은 당신을 기다립니다. 함께 알찬 시간을 보내며 세계와 소통해보시겠어요?</p>
+                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+                </div>
+                <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s"
+                    style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <div class="row g-5">
+                        <div class="col-12 col-sm-6 col-lg-12">
+                            <div class="border-start ps-4">
+                                <!-- <i class="fa fa-award fa-3x text-primary mb-3"></i> -->
+                                <img src="img/medal.png" alt="medalIcon" id="medalIcon">
+                                <br><br>
+                                <h4 class="mb-3">Award Winning</h4>
+                                <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-12">
+                            <div class="border-start ps-4">
+                                <!-- <i class="fa fa-users fa-3x text-primary mb-3"></i> -->
+                                <img src="img/group.png" alt="groupIcon" id="groupIcon">
+                                <h4 class="mb-3">Dedicated Team</h4>
+                                <span>Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="d-flex align-items-center">
+    <div class="p-5">
+        <h2 class="fw-bolder">Hati Library</h2>
+        <p style="font-family: 'hanabold' !important; font-weight: bold;">지속 가능한 미래를 위한 당신의 큰 발걸음. 책속에 세계가 현실로 이루어집니다.
+            당신의 상상력을 자유롭게 펼칠 수 있는 곳, 하티 도서관입니다. <br> 당신의 궁금증을 해소하고, 새로운 아이디어를 발견할 수 있습니다. <br>
+            지금, 하티 도서관은 당신을 기다립니다. 함께 알찬 시간을 보내며 세계와 소통해보시겠어요?</p>
+    </div>
+    <img class="libraryInfo" src="img/libraryInfo.png" alt="LibraryInformation">
+</div> -->
+
+    <!-- <div id="map">
         <iframe
             src="iframe src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25300.199884591377!2d126.94185341083985!3d37.566253800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f28479e913%3A0xa1b342929c4253d3!2z7ISc7Jq464-E7ISc6rSA!5e0!3m2!1sko!2skr!4v1685189586156!5m2!1sko!2skr"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>" allowfullscreen="false" loading="lazy">
         </iframe>
-    </div>
+    </div> -->
 </body>
