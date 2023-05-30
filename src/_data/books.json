@@ -1,0 +1,20 @@
+{
+    "books": [
+        {
+            "imgSrc": "./img/book1.png",
+            "title": "베스트 셀러"
+        },
+        {
+            "imgSrc": "./img/book2.png",
+            "title": "이달의 책"
+        },
+        {
+            "imgSrc": "./img/book3.png",
+            "title": "이주의 책"
+        },
+        {
+            "imgSrc": "./img/book4.png",
+            "title": "새로나온 책"
+        }
+    ]
+}

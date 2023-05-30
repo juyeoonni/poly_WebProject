@@ -1,0 +1,29 @@
+---
+# Add front matter to specify the JSON data file
+---
+<div class="row g-4" id="card">
+    {% assign books = site.data.books.books %}
+    {% for book in books %}
+    <div class="card{{ forloop.index }}" style="width: 18rem;">
+        <img src="{{ book.imgSrc }}" class="card-img-top" id="img{{ forloop.index }}">
+        <div class="card-body">
+            <br>
+            <h5 class="card-title" style="font-family: 'hanabold' !important; font-weight: bold;">
+                {{ book.title }}
+            </h5>
+            <!-- <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to
+          build on the card title and make up the bulk of the card's
+          content.</p> -->
+            <br>
+            <a href="aboutBook.html">
+                <div class="btn btn-primary" id="cardBtn{{ forloop.index }}"
+                    style="font-family: 'hanabold' !important; font-weight: bold;">
+                    Read More
+                </div>
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<br><br><br>

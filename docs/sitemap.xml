@@ -4,6 +4,9 @@
 <loc>http://localhost:4000/about.html</loc>
 </url>
 <url>
+<loc>http://localhost:4000/aboutBook.html</loc>
+</url>
+<url>
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
@@ -17,5 +20,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/loginPage.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/bookService.html</loc>
+<lastmod>2023-05-30T19:54:00+09:00</lastmod>
 </url>
 </urlset>
