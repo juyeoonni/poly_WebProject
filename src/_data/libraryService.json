@@ -1,0 +1,32 @@
+{
+    "cards": [
+        {
+            "id": "card1",
+            "img": "./img/searchBook.jpg",
+            "title": "도서 조회",
+            "description": "원하는 도서를 검색하고 신속하게 정보를 확인하세요!",
+            "link": "libraryService.html"
+        },
+        {
+            "id": "card2",
+            "img": "./img/readBook.jpg",
+            "title": "도서 대출",
+            "description": "필요한 도서를 대출하고 지식의 폭을 넓히세요!",
+            "link": "libraryService.html"
+        },
+        {
+            "id": "card3",
+            "img": "./img/returnBook.jpg",
+            "title": "도서 반납",
+            "description": "대출 도서를 반납할 수 있습니다!",
+            "link": "libraryService.html"
+        },
+        {
+            "id": "card4",
+            "img": "./img/applyBook.jpg",
+            "title": "희망 도서 신청",
+            "description": "도서관에 없는 도서를 요청하고 향후 구매나 입고를 위한 신청하세요!",
+            "link": "libraryService.html"
+        }
+    ]
+}

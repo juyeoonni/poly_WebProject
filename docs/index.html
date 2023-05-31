@@ -65,7 +65,7 @@
 </head>
 
 <body>
-    <br>
+    <br><br><br>
     <div id="nav3">
         <div id="nav2">
             <nav id="nav">
@@ -99,13 +99,26 @@
 
                         </div>
                         <a href="loginPage.html"
-                            class="btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5">Login</a>
+                            class="btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5" onclick="">Login
+                        </a>
                     </div>
                 </nav>
             </nav>
         </div>
     </div>
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const loginButton = document.querySelector('btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5');
+        loginButton.addEventListener('click', function () {
+            alert('확인');
+        });
+    });
+</script>
+
+
+
 
 </html>
     <style>
@@ -397,181 +410,198 @@
 </body>
 
 </html>
-<br><br><br>
 <style>
-  #card {
-    display: flex;
-    justify-content: center;
-  }
+    #card {
+        display: flex;
+        justify-content: center;
+    }
 
-  .card1 {
-    margin-right: 50px;
-  }
+    .card1 {
+        margin-right: 50px;
+    }
 
-  #img1 {
-    transition: transform 0.2s ease;
-  }
+    #img1 {
+        transition: transform 0.2s ease;
+    }
 
-  #img1:hover {
-    transform: scale(1.09);
-  }
+    #img1:hover {
+        transform: scale(1.09);
+    }
 
-  .card2 {
-    margin-right: 50px;
-  }
+    .card2 {
+        margin-right: 50px;
+    }
 
-  #img2 {
-    transition: transform 0.2s ease;
-  }
+    #img2 {
+        transition: transform 0.2s ease;
+    }
 
-  #img2:hover {
-    transform: scale(1.09);
-  }
+    #img2:hover {
+        transform: scale(1.09);
+    }
 
-  .card3 {
-    margin-right: 50px;
-  }
+    .card3 {
+        margin-right: 50px;
+    }
 
-  #img3 {
-    transition: transform 0.2s ease;
-  }
+    #img3 {
+        transition: transform 0.2s ease;
+    }
 
-  #img3:hover {
-    transform: scale(1.09);
-  }
+    #img3:hover {
+        transform: scale(1.09);
+    }
 
-  .card4 {
-    margin-right: 50px;
-  }
+    .card4 {
+        margin-right: 50px;
+    }
 
-  #img4 {
-    transition: transform 0.2s ease;
-  }
+    #img4 {
+        transition: transform 0.2s ease;
+    }
 
-  #img4:hover {
-    transform: scale(1.09);
-  }
+    #img4:hover {
+        transform: scale(1.09);
+    }
 
 
-  #cardBtn1 {
-    background-color: #63606d;
-    border-color: aliceblue;
-  }
+    #cardBtn1 {
+        background-color: #63606d;
+        border-color: aliceblue;
+    }
 
-  #cardBtn1:hover {
-  background-color: rgb(0, 133, 126); 
-}
+    #cardBtn1:hover {
+        background-color: rgb(0, 133, 126);
+    }
 
-  #cardBtn1:active {
-    background-color: #63606d;
-  }
+    #cardBtn1:active {
+        background-color: #63606d;
+    }
 
-  #cardBtn2 {
-    background-color: #63606d;
-    border-color: aliceblue;
-  }
+    #cardBtn2 {
+        background-color: #63606d;
+        border-color: aliceblue;
+    }
 
-  #cardBtn2:hover {
-  background-color: rgb(0, 133, 126); 
-  }
+    #cardBtn2:hover {
+        background-color: rgb(0, 133, 126);
+    }
 
-  #cardBtn2:active {
-    background-color: rgb(0, 133, 126);
-  }
+    #cardBtn2:active {
+        background-color: rgb(0, 133, 126);
+    }
 
-  #cardBtn3 {
-    background-color: #63606d;
-    border-color: aliceblue;
-  }
+    #cardBtn3 {
+        background-color: #63606d;
+        border-color: aliceblue;
+    }
 
-  #cardBtn3:hover {
-  background-color: rgb(0, 133, 126); 
-  }
+    #cardBtn3:hover {
+        background-color: rgb(0, 133, 126);
+    }
 
-  #cardBtn3:active {
-    background-color: rgb(0, 133, 126);
-  }
+    #cardBtn3:active {
+        background-color: rgb(0, 133, 126);
+    }
 
-  #cardBtn4 {
-    background-color: #63606d;
-    border-color: aliceblue;
-  }
+    #cardBtn4 {
+        background-color: #63606d;
+        border-color: aliceblue;
+    }
 
-  #cardBtn4:hover {
-  background-color: rgb(0, 133, 126); 
-  }
+    #cardBtn4:hover {
+        background-color: rgb(0, 133, 126);
+    }
 
-  #cardBtn4:active {
-    background-color: rgb(0, 133, 126);
-  }
+    #cardBtn4:active {
+        background-color: rgb(0, 133, 126);
+    }
 </style>
 
 
 <div class="row g-4" id="card">
-  <div class="card1" style="width: 18rem;">
-    <img src="./img/book1.png" class="card-img-top" id="img1">
-    <div class="card-body">
-      <br>
-      <h5 class="card-title" style="font-family: 'hanabold' !important; font-weight: bold;">베스트 셀러</h5>
-      <!-- <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to
-        build on the card title and make up the bulk of the card's
-        content.</p> -->
-      <br>
-      <a href="aboutBook.html">
-      <div class="btn btn-primary" id="cardBtn1" style="font-family: 'hanabold' !important; font-weight: bold;">Read
-        More</div>
-      </a>
+    
+    
+    <div class="card1" style="width: 18rem;">
+        <img src="./img/book1.png" class="card-img-top" id="img1">
+        <div class="card-body">
+            <br>
+            <h5 class="card-title" style="font-family: 'hanabold' !important; font-weight: bold;">
+                베스트 셀러
+            </h5>
+            <!-- <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to
+          build on the card title and make up the bulk of the card's
+          content.</p> -->
+            <br>
+            <a href="aboutBook.html">
+                <div class="btn btn-primary" id="cardBtn1"
+                    style="font-family: 'hanabold' !important; font-weight: bold;">
+                    Read More
+                </div>
+            </a>
+        </div>
     </div>
-  </div>
-
-  <div class="card2" style="width: 18rem;">
-    <img src="./img/book2.png" class="card-img-top" id="img2">
-    <div class="card-body">
-      <br>
-      <h5 class="card-title" style="font-family: 'hanabold' !important; font-weight: bold;">이달의 책</h5>
-      <!-- <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to
-        build on the card title and make up the bulk of the card's
-        content.</p> -->
-      <br>
-      <a href="aboutBook.html">
-      <div class="btn btn-primary" id="cardBtn2" style="font-family: 'hanabold' !important; font-weight: bold;">Read
-        More</div>
-      </a>
+    
+    <div class="card2" style="width: 18rem;">
+        <img src="./img/book2.png" class="card-img-top" id="img2">
+        <div class="card-body">
+            <br>
+            <h5 class="card-title" style="font-family: 'hanabold' !important; font-weight: bold;">
+                이달의 책
+            </h5>
+            <!-- <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to
+          build on the card title and make up the bulk of the card's
+          content.</p> -->
+            <br>
+            <a href="aboutBook.html">
+                <div class="btn btn-primary" id="cardBtn2"
+                    style="font-family: 'hanabold' !important; font-weight: bold;">
+                    Read More
+                </div>
+            </a>
+        </div>
     </div>
-  </div>
-
-  <div class="card3" style="width: 18rem;">
-    <img src="./img/book3.png" class="card-img-top" id="img3">
-    <div class="card-body">
-      <br>
-      <h5 class="card-title" style="font-family: 'hanabold' !important; font-weight: bold;">이주의 책</h5>
-      <!-- <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to
-        build on the card title and make up the bulk of the card's
-        content.</p> -->
-      <br>
-      <a href="aboutBook.html">
-      <div class="btn btn-primary" id="cardBtn3" style="font-family: 'hanabold' !important; font-weight: bold;">Read
-        More</div>
-      </a>
+    
+    <div class="card3" style="width: 18rem;">
+        <img src="./img/book3.png" class="card-img-top" id="img3">
+        <div class="card-body">
+            <br>
+            <h5 class="card-title" style="font-family: 'hanabold' !important; font-weight: bold;">
+                이주의 책
+            </h5>
+            <!-- <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to
+          build on the card title and make up the bulk of the card's
+          content.</p> -->
+            <br>
+            <a href="aboutBook.html">
+                <div class="btn btn-primary" id="cardBtn3"
+                    style="font-family: 'hanabold' !important; font-weight: bold;">
+                    Read More
+                </div>
+            </a>
+        </div>
     </div>
-  </div>
-
-  <div class="card4" style="width: 18rem;">
-    <img src="./img/book4.png" class="card-img-top" id="img4">
-    <div class="card-body">
-      <br>
-      <h5 class="card-title" style="font-family: 'hanabold' !important; font-weight: bold;">새로나온 책</h5>
-      <!-- <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to
-        build on the card title and make up the bulk of the card's
-        content.</p> -->
-      <br>
-      <a href="aboutBook.html">
-      <div class="btn btn-primary" id="cardBtn4" style="font-family: 'hanabold' !important; font-weight: bold;">Read
-        More</div>
-      </a>
+    
+    <div class="card4" style="width: 18rem;">
+        <img src="./img/book4.png" class="card-img-top" id="img4">
+        <div class="card-body">
+            <br>
+            <h5 class="card-title" style="font-family: 'hanabold' !important; font-weight: bold;">
+                새로나온 책
+            </h5>
+            <!-- <p class="card-text" style="font-family: 'hanabold' !important; font-weight: bold;">Some quick example text to
+          build on the card title and make up the bulk of the card's
+          content.</p> -->
+            <br>
+            <a href="aboutBook.html">
+                <div class="btn btn-primary" id="cardBtn4"
+                    style="font-family: 'hanabold' !important; font-weight: bold;">
+                    Read More
+                </div>
+            </a>
+        </div>
     </div>
-  </div>
-
+    
 </div>
 
 <br><br><br>
@@ -619,68 +649,87 @@
         justify-content: center;
     }
 </style>
+<div class="card-container"></div>
 
-<div class="card-container">
+<script>
+    // JSON 데이터
+    const jsonData = {
+        "cards": [
+            {
+                "id": "card1",
+                "img": "./img/searchBook.jpg",
+                "title": "도서 조회",
+                "description": "원하는 도서를 검색하고 신속하게 정보를 확인하세요!",
+                "link": "libraryService.html"
+            },
+            {
+                "id": "card2",
+                "img": "./img/readBook.jpg",
+                "title": "도서 대출",
+                "description": "필요한 도서를 대출하고 지식의 폭을 넓히세요!",
+                "link": "libraryService.html"
+            },
+            {
+                "id": "card3",
+                "img": "./img/returnBook.jpg",
+                "title": "도서 반납",
+                "description": "대출 도서를 반납할 수 있습니다!",
+                "link": "libraryService.html"
+            },
+            {
+                "id": "card4",
+                "img": "./img/applyBook.jpg",
+                "title": "희망 도서 신청",
+                "description": "도서관에 없는 도서를 요청하고 향후 구매나 입고를 위한 신청하세요!",
+                "link": "libraryService.html"
+            }
+        ]
+    };
 
-    <div class="card" id="card1">
-        <img src="./img/searchBook.jpg" class="card-img-top1">
+    // 카드 컨테이너 선택
+    const cardContainer = document.querySelector('.card-container');
 
-        <div class="card-body">
-            <h5 class="card-title">도서 조회</h5>
-            <p class="card-text">원하는 도서를 검색하고 신속하게 정보를 확인하세요!</p>
-            <a href="libraryService.html" class="btn btn-primary">select</a>
-        </div>
-    </div>
+    // JSON 데이터에서 카드 생성
+    jsonData.cards.forEach(card => {
+        // 카드 엘리먼트 생성
+        const cardElement = document.createElement('div');
+        cardElement.classList.add('card');
+        cardElement.id = card.id;
 
-    <div class="card" id="card2">
-        <img src="./img/readBook.jpg" class="card-img-top1">
+        // 이미지 엘리먼트 생성
+        const imgElement = document.createElement('img');
+        imgElement.src = card.img;
+        imgElement.classList.add('card-img-top1');
+        cardElement.appendChild(imgElement);
 
-        <div class="card-body">
-            <h5 class="card-title">도서 대출</h5>
-            <p class="card-text">필요한 도서를 대출하고 지식의 폭을 넓히세요!</p>
-            <a href="libraryService.html" class="btn btn-primary">select</a>
-        </div>
-    </div>
+        // 카드 내용 엘리먼트 생성
+        const cardBodyElement = document.createElement('div');
+        cardBodyElement.classList.add('card-body');
+        cardElement.appendChild(cardBodyElement);
 
-    <div class="card" id="card3">
-        <img src="./img/returnBook.jpg" class="card-img-top1">
+        // 카드 제목 엘리먼트 생성
+        const titleElement = document.createElement('h5');
+        titleElement.classList.add('card-title');
+        titleElement.textContent = card.title;
+        cardBodyElement.appendChild(titleElement);
 
-        <div class="card-body">
-            <h5 class="card-title">도서 반납</h5>
-            <p class="card-text">대출 도서를 반납할 수 있습니다!</p>
-            <br>
-            <a href="libraryService.html" class="btn btn-primary">select</a>
-        </div>
-    </div>
+        // 카드 설명 엘리먼트 생성
+        const descriptionElement = document.createElement('p');
+        descriptionElement.classList.add('card-text');
+        descriptionElement.textContent = card.description;
+        cardBodyElement.appendChild(descriptionElement);
 
-    <div class="card" id="card4">
-        <img src="./img/applyBook.jpg" class="card-img-top1">
+        // 링크 엘리먼트 생성
+        const linkElement = document.createElement('a');
+        linkElement.href = card.link;
+        linkElement.classList.add('btn', 'btn-primary');
+        linkElement.textContent = 'select';
+        cardBodyElement.appendChild(linkElement);
 
-        <div class="card-body">
-            <h5 class="card-title">희망 도서 신청</h5>
-            <p class="card-text">도서관에 없는 도서를 요청하고 향후 구매나 입고를 위한 신청하세요!</p>
-            <a href="libraryService.html" class="btn btn-primary">select</a>
-        </div>
-    </div>
-
-
-</div>
-</div>
-
-<!-- 참고 -->
-<!-- #cardBtn2 {
-background-color: #63606d;
-border-color: aliceblue;
-}
-
-#cardBtn2:hover {
-background-color: rgb(0, 133, 126);
-}
-
-#cardBtn2:active {
-background-color: rgb(0, 133, 126);
-} -->
-
+        // 카드 컨테이너에 카드 추가
+        cardContainer.appendChild(cardElement);
+    });
+</script>
 
 
 </div>

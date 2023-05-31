@@ -65,7 +65,7 @@
 </head>
 
 <body>
-    <br>
+    <br><br><br>
     <div id="nav3">
         <div id="nav2">
             <nav id="nav">
@@ -99,13 +99,26 @@
 
                         </div>
                         <a href="loginPage.html"
-                            class="btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5">Login</a>
+                            class="btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5" onclick="">Login
+                        </a>
                     </div>
                 </nav>
             </nav>
         </div>
     </div>
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const loginButton = document.querySelector('btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5');
+        loginButton.addEventListener('click', function () {
+            alert('확인');
+        });
+    });
+</script>
+
+
+
 
 </html>
     <!-- 부트스트랩 CSS 파일 로드 -->
@@ -121,6 +134,30 @@
             height: 50px;
             display: flex;
             justify-content: center;
+        }
+    
+        .services-icon-wap {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .services-icon-wap::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(0, 133, 126);
+            transition: top 0.3s ease-in-out;
+        }
+    
+        .services-icon-wap:hover::before {
+            top: 0;
+        }
+    
+        .services-icon-wap .h1 {
+            color: #fff;
         }
     </style>
 </head>
@@ -169,6 +206,18 @@
         </div>
     </section>
 </body>
+
+<script>
+    // Function to show the "확인" message
+    function showConfirmation() {
+        alert("신청되었습니다!");
+    }
+
+    // Add click event listeners to the service buttons
+    document.querySelectorAll('.services-icon-wap').forEach(function (button) {
+        button.addEventListener('click', showConfirmation);
+    });
+</script>
 </div>
 
 <footer>
