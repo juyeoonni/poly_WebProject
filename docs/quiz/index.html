@@ -47,6 +47,16 @@
         .selected {
             cursor: move;
         }
+
+        #pagination {
+            margin-top: 20px;
+        }
+
+        #pagination button {
+            padding: 8px 12px;
+            font-size: 14px;
+            margin-right: 10px;
+        }
     </style>
 </head>
 
@@ -62,7 +72,7 @@
         <tbody id="result"></tbody>
     </table>
 
-    <div id="pagination"></div>
+    <div id="pagination" style="text-align: center;"></div>
 
     <script>
         fetch('forum.json')

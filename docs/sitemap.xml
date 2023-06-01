@@ -28,4 +28,8 @@
 <loc>http://localhost:4000/bookService.html</loc>
 <lastmod>2023-05-30T19:54:00+09:00</lastmod>
 </url>
+<url>
+<loc>http://localhost:4000/quiz/</loc>
+<lastmod>2023-06-01T11:24:52+09:00</lastmod>
+</url>
 </urlset>
